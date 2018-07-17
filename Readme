@@ -1,0 +1,30 @@
+The following project is a MERN stack project consisting of the UI designed using Javascript library -ReactJS (16.4.1) and Node gateway in ExpressJS. 
+
+The React App uses Server side rendering for the project.
+
+following are the details to run the project 
+
+	- Start the server 
+		- Navigate to the backend folder in the terminal
+  		- Run the command 'npm install'
+		- Run the command 'node server.js'
+		-The server would start at port :8080
+
+	
+	-Start the React App
+		-Navigate to the housing folder in the terminal
+		-Run the command 'npm install'.
+		-Run the command 'npm run build'
+		-Run the command 'npm start'
+		-It would start at 3000
+		-The app can be viewed at localhost:3000
+
+
+Configure the server.js for cors 
+//change in  dir: backend/server.js
+ 
+var whitelist = [
+  'http://localhost:3000',
+  'http://10.0.1.77:3000',  //enter the ipaddress keeping the port number same.
+  
+];

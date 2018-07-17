@@ -1,0 +1,41 @@
+.housing-style {
+    width: 90%;
+    margin: 0 auto;
+}
+.list {
+    border: 2px solid black;
+}
+.date-section {
+    border: 1px solid #222;
+    padding: 5px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.date-section.active {
+    border-color: #666;
+    background: #f5f5f5;
+}
+.header {
+    border-bottom: 1px solid #222;
+    padding: 10px 0;
+}
+.list {
+    border: 1px solid #666;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+
+
+
+
+@media only screen and (max-width:767px){
+.date-section {
+    margin-bottom: 5px;
+    margin-left: 0;
+    display: block;
+}
+.date-block {
+    text-align: left;
+}
+}
