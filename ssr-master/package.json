@@ -24,7 +24,8 @@
     "react-redux": "^5.0.7",
     "react-xml-parser": "^1.0.7",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "spdy": "^3.4.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
