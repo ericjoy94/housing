@@ -13,16 +13,8 @@ var whitelist = [
   
 ];
 
-var corsOptions = { 
-    origin: function(origin, callback){
-    var originIsWhitelisted = typeof origin ==='undefined' || whitelist.indexOf(origin) !== -1;
-    callback(originIsWhitelisted ? null : 'Bad Request', originIsWhitelisted);
-  },
-  methods: "GET,PUT,POST,DELETE",
-  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-};
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 
 
