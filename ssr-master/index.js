@@ -4,7 +4,7 @@ const express = require('express'),
          path = require('path'),
          spdy = require('spdy'),
          fs = require('fs'),
-         port = 3000
+         port = 3300
 
 // Serving static files
 app.use('/assets', express.static(path.resolve(__dirname, 'assets')));
