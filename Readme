@@ -4,6 +4,8 @@ The React App uses Server side rendering for the project.
 
 following are the details to run the project 
 
+Make sure you have npm, node and express installed
+
 	- Start the server 
 		- Navigate to the backend folder in the terminal
   		- Run the command 'npm install'
