@@ -114,7 +114,7 @@ class Housing extends Component {
     //add people 
     addPersons(){
         this.persons += 1;
-        this.setState({ persons: this.persons, missingInput: '' })
+        this.setState({ persons: this.persons, missingInput: '' },()=>{this.handleSubmit()})
     }
 
     //reduce the no. of persons selected
@@ -124,13 +124,13 @@ class Housing extends Component {
         }
         else {
             this.persons = this.persons - 1;
-            this.setState({ persons: this.persons })
+            this.setState({ persons: this.persons },()=>{this.handleSubmit()})
         }
     }
 
     //function to select the start Date and end Date
     handleClick(sat, fri){
-        this.setState({ startDate: sat, endDate: fri, missingInput: false })
+        this.setState({ startDate: sat, endDate: fri, missingInput: false },()=>{this.handleSubmit()})
     }
 
     //get the corresponding value of the tags
@@ -209,7 +209,7 @@ class Housing extends Component {
                             <span>{this.state.thirdFriday}</span>
                         </div>
                     </div>
-                    <button onClick={this.handleSubmit}>Submit</button>
+                    {/* <button onClick={this.handleSubmit}>Submit</button> */}
                     <div>{this.state.missingInput}</div>
                     
                 </div>
