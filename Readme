@@ -14,7 +14,7 @@ Make sure you have npm, node and express installed
 
 	
 	-Start the React App
-		-Navigate to the housing folder in the terminal
+		-Navigate to the ssr-master folder in the terminal
 		-Run the command 'npm install'.
 		-Run the command 'npm run build'
 		-Run the command 'npm start'
